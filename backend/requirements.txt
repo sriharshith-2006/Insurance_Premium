@@ -3,4 +3,4 @@ uvicorn==0.29.0
 numpy
 pandas
 scikit-learn
-pydantic==2.6.4
+pydantic>=2.7.0
