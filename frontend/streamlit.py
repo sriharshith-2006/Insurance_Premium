@@ -130,13 +130,11 @@ elif page == "Prediction":
         try:
             with st.spinner("Predicting..."):
 
-                response = requests.post(
-                    "http://127.0.0.1:8000/predict",
+                    response = requests.post(
+                    "https://insurance-premium-3-qmw7.onrender.com/predict",
                     json=payload
                 )
 
-                st.write(response.status_code)
-                st.write(response.text)
 
             if response.status_code == 200:
                 result = response.json()
